@@ -1,0 +1,27 @@
+body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+.main-wrapper {
+    max-width: 66.667rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+}
+.main-header {
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
+footer {
+     text-align: center;
+}
