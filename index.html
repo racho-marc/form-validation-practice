@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation with JavaScript</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +20,53 @@
             <h2>Practice</h2>
         </header>
         <main>
-
+            <form id="form">
+                <header>
+                    <h3>Sign Up Today</h3>
+                </header>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="fullName">Full Name:</label>
+                            <input placeholder="Full Name" type="text" id="fullName" name="name" required minlength="3"
+                                maxlength="100">
+                        </li>
+                        <li>
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input placeholder="555-555-5555" type="tel" id="phoneNumber" name="phone" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </li>
+                        <li>
+                            <label for="emailAddress">Email Address:</label>
+                            <input placeholder="email@address.com" type="email" id="emailAddress" name="email"
+                                autocomplete="username" required>
+                        </li>
+                        <li>
+                            <label for="websiteUrl">Website URL:</label>
+                            <input placeholder="http://www.url.com" type="url" id="websiteUrl" name="website" required>
+                        </li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input placeholder="Create Password (minimum 8 characters)" type="password"
+                                autocomplete="new-password" id="password" required
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                                title="Please include at least one uppercase character, at least one lowercase character, and at least one number.">
+                        </li>
+                        <li>
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input placeholder="Confirm Password" type="password" autocomplete="new-password"
+                                id="confirmPassword" name="password" required
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                        </li>
+                        <li>
+                            <button type="submit">Register</button>
+                        </li>
+                        <li class="message-container">
+                            <p id="message">Don't hesitate</p>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
         </main>
         <footer>
 

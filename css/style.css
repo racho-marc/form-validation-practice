@@ -1,6 +1,6 @@
 body {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 1.5;
     background-color: whitesmoke;
 }
@@ -20,7 +20,68 @@ h2 {
     font-size: 1.5rem;
 }
 
+form {
+    max-width: 40rem;
+    margin: 4rem auto 0;
+    padding: 2rem; 
+    border: 2px solid #aaa;  
+    border-radius: 0.5em;
+    background-color: #FFF;
+    box-shadow: 0 3px 20px -8px rgba(0,0,0,0.5);
+}
+form header {
+    text-align: center;
+}
+fieldset {
+    border: none;
+}
 
+fieldset ul {
+    padding: 0;
+    list-style-type: none;
+}
+fieldset ul li {
+    margin-bottom: 1.5rem;
+}
+fieldset ul li label {
+    font-size: 0.889rem;
+    display: block;
+}
+fieldset ul li input,
+fieldset ul li button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    transition: 0.3s ease-in;
+    border: 1px solid black;
+    border-radius: 0.25em;
+}
+fieldset ul li input:valid {
+    border:1px solid green;
+}
+fieldset ul li input:invalid {
+    border:1px solid red;
+}
+fieldset ul li button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+fieldset ul li button:hover,
+fieldset ul li button:focus {
+    filter: brightness(200%);
+    background-color: rgb(26, 26, 26);
+}
+.message-container {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25em;
+}
+.message-container p {
+    text-align: center;    
+}
 /* Footer */
 footer {
      text-align: center;
